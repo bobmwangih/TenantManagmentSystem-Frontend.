@@ -1,37 +1,40 @@
-<div class="card border-primary mb-3 text-center" style="max-width: auto">
-  <div class="card-header"><h5>Tenant Details</h5></div>
-  <div class="card-body text-primary">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card border-dark mb-3" style="max-width: auto">
-          <div class="card-header text-success">First Name</div>
-          <div class="card-body text-dark">
+  <div class="card border-primary mb-3" style="max-width: auto">
+    <div class="card-header"></div>
+    <div class="card-body text-dark">
+      <div class="row">
+      <div class="col-sm-6">
+        <div
+          class="card border-primary mb-3"
+          style="max-width: auto"
+        >
+          <div class="card-header"><h5>Tenant Details</h5></div>
+          <div class="card-body text-success">
             <p class="card-text">
-             {{tenant.firstName}}
+              <b>Name:</b> {{ tenant.firstName }} {{ tenant.lastName }}
             </p>
+            <p><b>Phone:</b> {{ tenant.phoneNumber }}</p>
+            <p><b>ID Number:</b> {{ tenant.idNumber }}</p>
+            <p><b>Start of lease Date:</b> {{ tenant.dateOfLease }}</p>
+            <p><b>Months paid:</b> {{ tenant.monthsPaid }}</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card border-dark mb-3" style="max-width: auto">
-          <div class="card-header text-success">Last Name</div>
-          <div class="card-body text-dark">
+      <div class="col-sm-6">
+        <div
+          class="card border-primary mb-3"
+          style="max-width: auto"
+        >
+          <div class="card-header"><h5>House Details</h5></div>
+          <div class="card-body text-info">
             <p class="card-text">
-              {{tenant.lastName}}
+              <b>House no:</b> 1
             </p>
+            <p><b>House Type:</b> 1 Bedroom</p>
+            <p><b>Rent rate:</b> Ksh 23,000</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card border-dark mb-3" style="max-width: auto">
-          <div class="card-header text-success">Phone Number</div>
-          <div class="card-body text-dark">
-            <p class="card-text">
-             {{tenant.phoneNumber}}
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-</div>
+

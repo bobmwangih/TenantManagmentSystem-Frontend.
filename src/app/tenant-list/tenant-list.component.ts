@@ -11,6 +11,7 @@ import { TenantService } from '../tenant.service';
 export class TenantListComponent implements OnInit {
   tenants: Tenant[];
 
+
   constructor(private tenantService: TenantService, private router: Router) {}
 
   ngOnInit(): void {

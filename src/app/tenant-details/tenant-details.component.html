@@ -27,10 +27,11 @@
           <div class="card-header"><h5>House Details</h5></div>
           <div class="card-body text-info">
             <p class="card-text">
-              <b>House no:</b> 1
+              <b>House:</b> {{tenant.houseNumber}}
             </p>
-            <p><b>House Type:</b> 1 Bedroom</p>
-            <p><b>Rent rate:</b> Ksh 23,000</p>
+            <p><b>House Type:</b> {{tenant.houseType}}</p>
+            <p><b>Rent rate:</b> {{tenant.rate}}</p>
+            <p><b>Last date of payment:</b> {{ tenant.dateOfTransaction }} </p>
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@
   <div class="row justify-content-md-center">
     <div class="col-sm-4" *ngFor="let tenant of tenants; index as i">
       <div class="card border-dark mb-3" style="max-width: auto">
-        <div class="card-header text-success">House No: {{ i + 1 }}</div>
+        <div class="card-header text-success">House: {{ tenant.houseNumber }}</div>
         <div class="card-body text-dark">
           <p class="card-text">
             <b>Name:</b> {{ tenant.firstName }} {{ tenant.lastName }}
@@ -49,10 +49,9 @@
           <p><b>Phone:</b> {{ tenant.phoneNumber }}</p>
           <p><b>ID Number:</b> {{ tenant.idNumber }}</p>
           <p><b>Start of lease Date:</b> {{ tenant.dateOfLease }}</p>
-          <p><b>Last Date of Payment:</b> {{ tenant.dateOfLease }}</p>
+          <p><b>Last Date of Payment:</b> {{ tenant.dateOfTransaction }}</p>
           <p>
             <b>Months paid:</b> {{ tenant.monthsPaid.split(" ") }}
-            
           </p>
           <p>
             <button

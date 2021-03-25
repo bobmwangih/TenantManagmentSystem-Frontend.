@@ -5,6 +5,9 @@ export class Tenant {
     phoneNumber: string;
     idNumber: string;
     houseNumber: string;
+    houseType: string;
+    rate: string;
     dateOfLease: string;
     monthsPaid: string;
+    dateOfTransaction: string;
 }

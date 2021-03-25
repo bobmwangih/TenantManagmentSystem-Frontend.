@@ -47,13 +47,38 @@
       </div>
 
       <div class="form-group">
-        <label>House:</label>
-        <input
-          type="text"
-          class="form-control"
-          id="houseNumber"
-          name="houseNumber"
-        />
+        <div class="row">
+          <div class="col-sm-4">
+        <label>House Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="houseNumber"
+              [(ngModel)]="tenant.houseNumber"
+              name="houseNumber"
+            />
+          </div>
+          <div class="col-sm-4">
+            <label>House Type:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="houseType"
+              [(ngModel)]="tenant.houseType"
+              name="houseType"
+            />
+          </div>
+          <div class="col-sm-3">
+            <label>House Rent Rate:</label>
+            <input
+            type="text"
+            class="form-control"
+            id="rate"
+            [(ngModel)]="tenant.rate"
+            name="rate"
+          />
+          </div>
+        </div>
       </div>
 
       <div class="form-group">
@@ -75,14 +100,12 @@
             *ngFor="let monthItem of paid"
           >
             <div class="col-sm-6">
-              <li class="list-group-item">
                 <input
                   type="checkbox"
                   name="{{ monthItem.month }}"
                   [(ngModel)]="monthItem.isSelected"
                 />
                 <label for="{{ monthItem.month }}">{{ monthItem.month }}</label>
-              </li>
             </div>
           </ul>
         </div>

@@ -10,6 +10,7 @@ import { TenantService } from '../tenant.service';
 })
 export class TenantListComponent implements OnInit {
   tenants: Tenant[];
+  mieziZimelipwa;
 
 
   constructor(private tenantService: TenantService, private router: Router) {}
